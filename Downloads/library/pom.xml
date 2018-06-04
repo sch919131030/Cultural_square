@@ -42,7 +42,7 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-stater-data-jpa</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<dependency>
@@ -75,7 +75,8 @@
 
         <dependency>
             <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
+	    <artifactId>mapper</artifactId>
+	    <version>4.0.2</version>
         </dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -86,6 +87,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
+			 <version>1.2.47</version>
 		</dependency>
 
         <dependency>
@@ -134,15 +136,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.xml</include>
-				</includes>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
 	</build>
 
 
