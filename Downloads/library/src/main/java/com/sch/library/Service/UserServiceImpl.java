@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public Result login(HttpSession session, String user_id) {
-        if(userDao.exists(session.getAttribute("user_id")+"")==0) {
+        if(userDao.exists(user_id)==0) {
             return ResultCache.PERMISSION_DENIED;
         }
         session.setAttribute("user_id", user_id);
